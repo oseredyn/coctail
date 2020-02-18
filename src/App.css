@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,700&display=swap');
+.wrapper{
+    min-height: 100vh;
+}
+header{
+    padding: 20px;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    font-family: 'Work Sans', sans-serif;
+    margin-bottom: 30px;
+}
+h2{
+    font-family: 'Work Sans', sans-serif;
+    margin: 0 0 30px;
+    font-size: 30px;
+}
+p{
+    margin: 0;
+}
+dl{
+    display: flex;
+    margin: 0;
+    padding: 10px 0;
+}
+dt{
+    font-weight: bold;
+    margin: 0 5px 0 0;
+}
+dd{
+    margin: 0 20px 0 0;
+}
+.logo{
+    min-width: 150px;
+}
+.logo img{
+    max-width: 150px;
+}
+.slogan{
+    margin: -75px 0 0 -70px;
+    font-size: 24px;
+    line-height: 40px;
+}
+main{
+    background: rgba(255,255,255,.9);
+    border-radius: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+}
+.find-form{
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+    max-width: 100%;
+}
+button.find-btn{
+    margin-left: 40px;
+}
+.modal-content {
+    position: absolute;
+    width: 900px;
+    background: #fff;
+    padding: 30px 20px 20px;
+    left: calc(50% - 440px);
+    outline: none;
+    border-radius: 40px;
+    top: 10vh;
+}
+.modal-content .scroller{
+    max-height: 80vh;
+    overflow: auto;
+}
+.modal-content img{
+    max-width: 250px;
+    margin-right: 20px;
+}
+.modal-content .container{
+    display: flex;
+}
+.modal-content > button{
+    position: absolute;
+    right: 40px;
+    top: 20px;
+}
+.info{
+    font-family: 'Work Sans', sans-serif;
+}
+@media (min-width: 1280px) {
+    .wrapper{
+        width: 1280px;
+        margin: auto;
+    }
+    .find-form{
+        width: 640px;
+        margin: auto;
+    }
+}
+@media (max-width: 1280px) {
+    .wrapper{
+        margin: 0 15px;
+    }
+    .modal-content{
+        width: auto;
+        border-radius: 0;
+        max-width: 100%;
+        left: 0;
+        right: 0;
+        top:0;
+        bottom: 0;
+        height: auto;
+    }
+    .modal-content .container{
+        flex-direction: column;
+    }
+    dl{
+        flex-direction: column;
+    }
+    .modal-content > button{
+        right: 20px;
+    }
+    .modal-content .scroller {
+        max-height: 100vh;
+    }
+}
